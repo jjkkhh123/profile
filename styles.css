@@ -1,0 +1,225 @@
+/* 전체 페이지 배경 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* 하나의 배경 유지 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 네비게이션 바 스타일 */
+header {
+    background-color: #b56767;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* 모든 섹션을 하나의 배경처럼 자연스럽게 */
+section {
+    width: 80%;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: left;
+}
+
+/* 프로필 이미지 스타일 */
+.profile_img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 150px;
+    border: 2px solid #fff;
+}
+
+/* About 섹션 하나의 배경 유지 */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+/* 이름 스타일 */
+.name {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 오른쪽에 정보 표시 */
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_info .info {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.profile_info p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* 소셜 아이콘 스타일 */
+.social {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social a i {
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 호버 효과 */
+.social a:hover i {
+    transform: scale(1.2);
+    color: #b56767;
+}
+
+/* 컨택트 섹션 전체 너비 */
+#contact {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* 스킬 섹션 스타일 */
+#skills {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* 개별 스킬 스타일 */
+.skill {
+    margin-bottom: 15px;
+}
+
+/* 스킬 바 배경 */
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    display: block; /* 바가 안 보이는 문제 해결 */
+}
+
+/* 스킬 바 내부 채워지는 부분 */
+.skill-level {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    width: 80%; /* 기본 너비 설정 */
+    transition: width 1s ease-in-out;
+    display: block; /* 요소가 안 보일 경우 강제 표시 */
+}
+
+/*경험 */
+/* Experience 섹션 스타일 */
+#experience {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 개별 경력 스타일 */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 22px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-item h3 span {
+    font-size: 16px;
+    color: #777;
+}
+.experience-item .date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b56767;
+    margin-bottom: 5px;
+}
+
+.work {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.experience-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-item ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.experience-item ul li strong {
+    color: #333;
+}
